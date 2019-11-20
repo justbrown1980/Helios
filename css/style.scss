@@ -9,10 +9,13 @@ html {
 }
 
 body {
-    background: none;
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
+    background: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -140,16 +143,6 @@ footer {
   background: #222;
 }
 
-#intro .btn-default:hover {
-    background: $highlight;
-    color: $light-text;
-    border-color: transparent;
-
-    .fas {
-      color: $light-text;
-    }
-}
-
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -215,6 +208,7 @@ footer {
 .custom-navbar .navbar-brand {
     font-weight: 600;
     height: 7.2rem;
+    background-color: transparent;
 }
 
 .custom-navbar .nav li a {
@@ -228,7 +222,6 @@ footer {
 }
 
 .custom-navbar .nav li a:hover {
-    background: transparent;
     color: $highlight;
 }
 
@@ -238,7 +231,6 @@ footer {
 }
 
 .custom-navbar .nav li.active > a {
-    background-color: transparent;
     color: $highlight;
 }
 
@@ -252,7 +244,7 @@ footer {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: $light-text;
+    background: transparent;
     border-color: transparent;
 }
 
@@ -263,7 +255,7 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: $light-text;
+        background: transparent;
         padding: 0;
     }
 
@@ -275,7 +267,8 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    // background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/grain-silo-bg.jpg') 0 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -291,7 +284,23 @@ footer {
     height: 100vh;
     text-align: left;
 
-    color: $dark-text;
+    color: $light-text;
+
+    .btn-default {
+      border-color: $light-text;
+      color: $light-text;
+
+      .fas {
+        color: $light-text;
+      }
+
+      &:hover {
+        background: $highlight;
+        color: $light-text;
+        border-color: transparent;
+      }
+      
+    }
 }
 
 #intro h3 {

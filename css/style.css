@@ -3,10 +3,12 @@ html {
 }
 
 body {
-  background: none;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
+  background: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*---------------------------------------
@@ -132,16 +134,6 @@ footer {
   background: #222;
 }
 
-#intro .btn-default:hover {
-  background: #5f8c02;
-  color: #F1F1F1;
-  border-color: transparent;
-}
-
-#intro .btn-default:hover .fas {
-  color: #F1F1F1;
-}
-
 .parallax-section {
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -221,6 +213,7 @@ footer {
 .custom-navbar .navbar-brand {
   font-weight: 600;
   height: 7.2rem;
+  background-color: transparent;
 }
 
 .custom-navbar .nav li a {
@@ -235,7 +228,6 @@ footer {
 }
 
 .custom-navbar .nav li a:hover {
-  background: transparent;
   color: #5f8c02;
 }
 
@@ -245,7 +237,6 @@ footer {
 }
 
 .custom-navbar .nav li.active > a {
-  background-color: transparent;
   color: #5f8c02;
 }
 
@@ -259,7 +250,7 @@ footer {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-  background: #F1F1F1;
+  background: transparent;
   border-color: transparent;
 }
 
@@ -270,7 +261,7 @@ footer {
     background: 0 0;
   }
   .custom-navbar.top-nav-collapse {
-    background: #F1F1F1;
+    background: transparent;
     padding: 0;
   }
 }
@@ -279,7 +270,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-  background: url("../images/intro-bg.jpg") 50% 0 repeat-y fixed;
+  background: url("../images/grain-silo-bg.jpg") 0 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   color: #F1F1F1;
@@ -291,7 +282,22 @@ footer {
   align-items: center;
   height: 100vh;
   text-align: left;
-  color: #111111;
+  color: #F1F1F1;
+}
+
+#intro .btn-default {
+  border-color: #F1F1F1;
+  color: #F1F1F1;
+}
+
+#intro .btn-default .fas {
+  color: #F1F1F1;
+}
+
+#intro .btn-default:hover {
+  background: #5f8c02;
+  color: #F1F1F1;
+  border-color: transparent;
 }
 
 #intro h3 {
