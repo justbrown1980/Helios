@@ -93,7 +93,7 @@ footer {
 #overview h3,
 #detail h3, #video h3,
 #register h3,
-#venue h3,
+#services h3,
 #contact h3 {
   padding-bottom: 1.2rem;
 }
@@ -270,7 +270,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-  background: url("../images/grain-silo-bg.jpg") 0 0 repeat-y fixed;
+  background: url("../images/intro-bg.jpg") 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   color: #F1F1F1;
@@ -282,22 +282,26 @@ footer {
   align-items: center;
   height: 100vh;
   text-align: left;
-  color: #F1F1F1;
+  color: #111111;
 }
 
 #intro .btn-default {
-  border-color: #F1F1F1;
-  color: #F1F1F1;
+  border-color: #111111;
+  color: #111111;
 }
 
 #intro .btn-default .fas {
-  color: #F1F1F1;
+  color: #111111;
 }
 
 #intro .btn-default:hover {
   background: #5f8c02;
   color: #F1F1F1;
   border-color: transparent;
+}
+
+#intro .btn-default:hover .fas {
+  color: #F1F1F1;
 }
 
 #intro h3 {
@@ -309,8 +313,8 @@ footer {
 -----------------------------------------*/
 #overview img {
   position: relative;
-  -webkit-box-shadow: 10px 10px 5px 0px #e6e6e6;
-          box-shadow: 10px 10px 5px 0px #e6e6e6;
+  -webkit-box-shadow: 1rem 1rem 0.5rem 0rem #e6e6e6;
+          box-shadow: 1rem 1rem 0.5rem 0rem #e6e6e6;
 }
 
 /*---------------------------------------
@@ -426,6 +430,45 @@ footer {
 #register input[type="submit"]:hover {
   background: #F1F1F1;
   color: #111111;
+}
+
+/*---------------------------------------
+   Services section              
+-----------------------------------------*/
+#services {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  color: #111111;
+}
+
+#services p {
+  padding-top: 1.2rem;
+  padding-bottom: 1.8rem;
+}
+
+#services img {
+  -webkit-box-shadow: 1rem 1rem 0.5rem 0rem #e6e6e6;
+          box-shadow: 1rem 1rem 0.5rem 0rem #e6e6e6;
+}
+
+#services ul {
+  padding: 1rem 0 0 0;
+  list-style: none;
+}
+
+#services ul li {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  padding-left: 4rem;
+  position: relative;
+}
+
+#services ul li i {
+  display: inline-block;
+  position: absolute;
+  left: 0;
 }
 
 /*---------------------------------------

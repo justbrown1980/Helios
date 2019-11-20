@@ -102,7 +102,7 @@ footer {
 #overview h3,
 #detail h3, #video h3,
 #register h3,
-#venue h3,
+#services h3,
 #contact h3 {
     padding-bottom: 1.2rem;
 }
@@ -283,20 +283,24 @@ footer {
     height: 100vh;
     text-align: left;
 
-    color: $light-text;
+    color: $dark-text;
 
     .btn-default {
-      border-color: $light-text;
-      color: $light-text;
+      border-color: $dark-text;
+      color: $dark-text;
 
       .fas {
-        color: $light-text;
+        color: $dark-text;
       }
 
       &:hover {
         background: $highlight;
         color: $light-text;
         border-color: transparent;
+
+        .fas {
+          color: $light-text;
+        }
       }
       
     }
@@ -314,7 +318,7 @@ footer {
 #overview img {
   position: relative;
 
-  box-shadow: 10px 10px 5px 0px rgba(230,230,230,1);
+  box-shadow: 1rem 1rem 0.5rem 0rem rgba(230,230,230,1);
 }
 
 
@@ -425,6 +429,56 @@ footer {
   background: $light-text;
   color: $dark-text;
 }
+
+
+
+
+
+/*---------------------------------------
+   Services section              
+-----------------------------------------*/
+#services {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  color: $dark-text;
+
+  p {
+    padding-top: 1.2rem;
+    padding-bottom: 1.8rem;
+  }
+
+  img {
+    box-shadow: 1rem 1rem 0.5rem 0rem rgba(230,230,230,1);
+  }
+
+  ul {
+    padding: 1rem 0 0 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    
+      padding-left: 4rem;
+      position: relative;
+    
+      i {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 /*---------------------------------------
    Contact section              
